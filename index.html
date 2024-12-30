@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Download Text Relay</title>
+    <link rel="icon" href="icon.png" type="image/png" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #4a90e2, #007aff, #1e3799);
+        color: white;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      button {
+        font-size: 1.2rem;
+        padding: 0.75rem 2rem;
+        color: #fff;
+        background: linear-gradient(90deg, #007aff, #0056b3);
+        border: none;
+        border-radius: 50px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        outline: none;
+      }
+
+      button:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+      }
+
+      button:active {
+        transform: scale(0.95);
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      h1,
+      button {
+        animation: fadeIn 1s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Download Text Relay</h1>
+    <a href="TextRelay.apk" download>
+      <button>Download</button>
+    </a>
+  </body>
+</html>
